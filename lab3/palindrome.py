@@ -1,5 +1,4 @@
-w1 = "Oxo"
-w2 = "oxo"
+import sys
 
 def checkpal(string):
   inverse = string[::-1]
@@ -7,6 +6,5 @@ def checkpal(string):
     print("true")
   else:
     print("false")
-
-checkpal(w1)
-checkpal(w2)
+    
+checkpal(sys.argv[1])
